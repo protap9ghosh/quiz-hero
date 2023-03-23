@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/blog.png" type="image/x-icon">
+    <title>Blog & FAQ</title>
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-4xl font-bold mb-5 text-teal-600 text-center my-8">FAQ</h1>
+    <div class="w-7/12 mx-auto">
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-md">
+            <div class="collapse-title text-xl font-medium bg-slate-200">
+                <p class="text-purple-500">Difference between map(), filter(), forEach() and find() method.</p>
+            </div>
+            
+            <div class="collapse-content"> 
+                <p class="mb-5">The map, filter, forEach, and find methods are each used to loop over the array, but there are some differences in their functionality.</p>
+
+                <p class="mb-5">The <strong> map()</strong> method in JavaScript returns a new array, and the length of the returned array is always equal to the length of the original array. The original array is not changed.</p>
+                
+                <p class="mb-5">In JavaScript, the <strong>filter()</strong> method returns a new array, and the length of the returned array may be smaller than the length of the original array. The original array is not modified.</p>
+
+                <p class="mb-5">The <strong>forEach()</strong> function returns no value. It is often used instead of a loop to iterate over an array. The original array is not changed.</p>
+
+                <p>On the other hand, the find method works like the <strong>filter()</strong> method but the find method returns the first data that matches the condition so if you want data based on a condition you can use the find method on the other hand if it is based on a condition. Filter method can be used if all the conditions associated with the condition are wanted</p>
+
+            </div>
+        </div>
+      
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-md my-5">
+            <div class="collapse-title text-xl font-medium bg-slate-200">
+                <P class="text-purple-500">Difference between Local Storage and Session Storage</P>
+            </div>
+
+            <div class="collapse-content">
+                <h5 class="text-xl font-semibold">Local Storage</h5>
+                <p class="mb-5">The data is stored in the user's browser until the local storage is deleted or cleared. Its storage capacity is 5-10 MB. Local storage Data is shared between all tabs. local storage read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions</p>
+
+                <h5 class="text-xl font-semibold">Session Storage</h5>
+                <p>Session Storage Data is deleted once the browser is closed, Its storage capacity is limited to 5 MB. Each tab or window has its own session storage data. Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.</p>
+            </div>
+        </div>
+      
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-md my-5">
+            <div class="collapse-title text-xl font-medium bg-slate-200">
+                <P class="text-purple-500">What is Event Loop and How does it's work?</P>
+            </div>
+
+            <div class="collapse-content"> 
+                <p class="mb-5">An event loop is a mechanism of JavaScript that always monitors the call stack and callback queue.
+                    The event loop continuously checks two data structures: the call stack and the message queue.</p>
+
+                    <p>When the call stack is empty, the event loop checks the message queue for any tasks that are ready to be executed. The event loop adds the next task to the call stack and executes it, then continues to check the call stack and message queue in this way, until there are no more tasks to execute.</p>
+            </div>
+        </div>
+      
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-md">
+            <div class="collapse-title text-xl font-medium bg-slate-200">
+                <p class="text-purple-500">What is the purpose of quizTimer() & chosseQuiz() function</p>
+            </div>
+
+            <div class="collapse-content"> 
+                <p class="mb-5">The <strong>quizTimer()</strong> function creates and updates a timer on a wep page for a quiz. It uses <strong>setInterval()</strong> function to execute a callback function that updates the timer every second.</p>
+
+                <p>The <strong>chooseQuiz()</strong> function records the user's answer. It adds a new answer to an array, depending on whether an answer already exists for the question. Finally, it calls a function to display all the recorded answers on the web page.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
